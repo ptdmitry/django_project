@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Client: {{ client }}</h1>
+
+    <p>Посмотреть заказы:</p>
+    <a href="{% url 'myapp:orders_year' year=current_date|date:'Y' pk=client.pk %}">За год</a>
+    <a href="{% url 'myapp:orders_month' year=current_date|date:'Y' month=current_date|date:'m' pk=client.pk %}">За
+        месяц</a>
+    <a href="{% url 'myapp:orders_week' year=current_date|date:'Y' month=current_date|date:'m'
+    week=current_date|date:'W' pk=client.pk %}">За неделю</a>
+{% endblock %}
