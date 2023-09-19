@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>{{ product.title }}</p>
+    <p>{{ product.description }}</p>
+    <a href="{% url 'myapp:update_product' product.pk %}">Редактировать товар</a>
+{% endblock %}

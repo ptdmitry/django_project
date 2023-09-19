@@ -1,2 +1,3 @@
-# django_project
-For practical tasks on Django Framework
+Настроить работу проекта на сервере.
+
+https://www.ptdmitry.pythonanywhere.com/

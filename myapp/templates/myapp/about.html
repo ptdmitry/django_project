@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+    <h1>Обо мне</h1>
+    <p>Инженер-энергетик</p>
+    <p><a href="{% url 'myapp:main' %}">Назад на главную страницу</a></p>
+{% endblock %}

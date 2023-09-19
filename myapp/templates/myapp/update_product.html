@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Редактирование товара</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Обновить</button>
+        <a href="{% url 'myapp:product_page' product.pk %}">Отмена</a>
+    </form>
+{% endblock %}

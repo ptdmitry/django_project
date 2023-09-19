@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block content %}
+    <h1>Главная страница</h1>
+    <p>Первый Django-сайт</p>
+    <p><a href="{% url 'myapp:about' %}">Узнать больше обо мне</a></p>
+{% endblock %}
